@@ -1,4 +1,4 @@
-const amount = 1000
+const amount = 100
 let array = []
 for (let i = 1; i <= amount; i++) {
     for (let j = 1; j <= amount; j++) {
@@ -29,5 +29,5 @@ function euclid_gcd_many(array) {
         gcd = euclid_gcd_two(gcd,array[i])
         i++            
     }
-    return gcd     
+    return gcd
 }
