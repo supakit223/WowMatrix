@@ -1,16 +1,21 @@
-const amount = 100
-let array = []
-for (let i = 1; i <= amount; i++) {
-    for (let j = 1; j <= amount; j++) {
-        for (let k = 1; k <= amount; k++) {
-            array[0] = i
-            array[1] = j
-            array[2] = k            
-            if (i*i == j*j + k*k && euclid_gcd_many(array) == 1) {
-                console.log(`${i} , ${j} , ${k}`)
-            }
-        }
-    }
+function showPythagoras() { 
+    const amount = document.getElementById("amount").value    
+    document.getElementById("show").innerHTML = amount  
+    // let array = []
+    // let show = ""
+    // for (let i = 1; i <= amount; i++) {
+    //     for (let j = 1; j <= amount; j++) {
+    //         for (let k = 1; k <= amount; k++) {
+    //             array[0] = i
+    //             array[1] = j
+    //             array[2] = k           
+    //             if (i*i == j*j + k*k && euclid_gcd_many(array) == 1) {
+    //                 show = show + `${i} , ${j} , ${k}`                    
+    //             }
+    //         }
+    //     }
+    // }
+    // document.getElementById("show").innerHTML = show
 }
 // function หา ห.ร.ม.
 function euclid_gcd_two(number1,number2) {
