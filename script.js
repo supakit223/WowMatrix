@@ -9,7 +9,7 @@ function showPythagoras() {
                 array[0] = i
                 array[1] = j
                 array[2] = k           
-                if (k*k == i*i + j*j && i < j && euclid_gcd_many(array) == 1) {
+                if (k*k == i*i + j*j && i <= j && euclid_gcd_many(array) == 1) {
                     show = show + `${i} , ${j} , ${k} <br>`                    
                 }
             }
