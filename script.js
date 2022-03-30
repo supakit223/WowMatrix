@@ -11,8 +11,8 @@ function showWow() {
                             for (let g = 1; g <= amount; g++) {   
                                 for (let h = 1; h <= amount; h++) {    
                                     if (a*e+b*g == 10*a+e && a*f+b*h == 10*b+f && c*e+d*g == 10*c+g && c*f+d*h == 10*d+h ) {
-                                        show = show + `${a} , ${b} <br> ${c} , ${d} <br> ${e} , ${f} <br> ${g} , ${h} <br><br>`                    
                                         count++
+                                        show = show + `ชุดที่ ${count} <br> ${a} , ${b} <br> ${c} , ${d} <br> ${e} , ${f} <br> ${g} , ${h} <br><br>`                                                            
                                     }
                                 }
                             }
