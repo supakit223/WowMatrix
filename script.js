@@ -1,6 +1,6 @@
 function showPythagoras() { 
     const amount = document.getElementById("amount").value    
-    document.getElementById("show").innerHTML = amount  
+    // document.getElementById("show").innerHTML = amount  
     let array = []
     let show = ""
     for (let i = 1; i <= amount; i++) {
@@ -9,8 +9,8 @@ function showPythagoras() {
                 array[0] = i
                 array[1] = j
                 array[2] = k           
-                if (i*i == j*j + k*k && euclid_gcd_many(array) == 1) {
-                    show = show + `${i} , ${j} , ${k}`                    
+                if (k*k == i*i + j*j && i < j && euclid_gcd_many(array) == 1) {
+                    show = show + `${i} , ${j} , ${k} <br>`                    
                 }
             }
         }
